@@ -244,14 +244,16 @@
                                     <label for="product-requested" class="form-field-label">What product would you like?</label>
                                     <select id="product-requested" name="product-requested" required="" data-name="product-requested" class="form-field w-select">
                                         <option value="">Select one...</option>
-                                        <option value="Micro Package">Micro Package (3 Blog Content Pieces)</option>
-                                        <option value="Mega Package">Mega Package (5 Blog Content Pieces)</option>
-                                        <option value="Unlimited Package">Unlimited Package</option>
+                                        <option value="Micro Package">Micro Package ($499)</option>
+                                        <option value="Mega Package">Mega Package ($999)</option>
+                                        <option value="Unlimited Package">Unlimited Package ($1999)</option>
+<!--
                                         <option value="Blog Post">Blog Post (One-off Project)</option>
                                         <option value="Landing Page">Landing Page (One-off Project)</option>
                                         <option value="Facebook Ads">Facebook Ads (One-off Project)</option>
                                         <option value="Email Copy">Email Copy (One-off Project)</option>
                                         <option value="White Paper">White Paper (One-off Project)</option>
+-->
                                         <option value="Something Else">Something Else</option>
                                     </select>
                                 </div>
@@ -263,7 +265,7 @@
                                     <label for="comments" class="form-field-label">Tell us about your project</label>
                                     <textarea data-name="comments" maxlength="5000" id="comments" name="comments" required="" placeholder="Your goal, the content you&#x27;d like, deadlines, etc. " class="form-field free-text w-input"></textarea>
                                 </div>
-                                <button onclick="amplitude.getInstance().logEvent('sign-up');" type="submit" class="buttons w-button">Submit</button>
+                                <button onclick="amplitude.getInstance().logEvent('submit-form');" type="submit" class="buttons w-button">Submit</button>
                             </form>
                             
                             <div class="success-message w-form-done"><img src="https://uploads-ssl.webflow.com/5cd2201c68db652aa5dfa30c/5cdf8cdbe7b5797c55aa704c_logo.png" width="150" srcset="https://uploads-ssl.webflow.com/5cd2201c68db652aa5dfa30c/5cdf8cdbe7b5797c55aa704c_logo-p-500.png 500w, https://uploads-ssl.webflow.com/5cd2201c68db652aa5dfa30c/5cdf8cdbe7b5797c55aa704c_logo.png 538w" sizes="100vw" alt="" />
