@@ -158,7 +158,7 @@ p.lead {
 
 .nav-menu.is-scrolling,
 .nav-menu.menu-is-open {
-    background-image: linear-gradient(to left top, #DE5C14, #e6810a, #ea9700, #ecad01, #ebc312);
+    background-image: linear-gradient(to left, #DE5C14, #e6810a, #ea9700, #ecad01);
 }
 
 /*
