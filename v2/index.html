@@ -113,8 +113,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#why">WHY US</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#how">HOW IT WORKS</a> </li>
-                                
+                                <li class="nav-item"> <a class="nav-link" href="#services">OUR SERVICES</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#pricing">PRICING</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#faq">FAQ</a> </li>
                                 <li class="nav-item"><a href="#pricing" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Get Started</a></li>
@@ -134,7 +133,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="container">
                         <h1 style="font-size: 3em">Unlimited copywriting services for $999/mo</h1>
                         <p class="tagline"> <small>Why hire a copywriter or manage a freelance army when you can get your content delivered within 48h by the best writers in the world, for a fixed monthly fee.</small></p>
-                        <a href="#how" class="btn btn-light mt-5">SAY WHAT?</a> 
+                        <a href="#why" class="btn btn-light mt-5">SAY WHAT?</a> 
 <!--                        <a href="#pricing" class="btn btn-light mt-5" style="color:#FA2A8F">Subscribe now</a>-->
                     </div>
                 </div>
@@ -147,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </header>
     
     
-    <div class="section">
+    <div class="section" id="why">
         <h2 class="text-center">Why choose Scriptify?</h2>
         <div class="container">
             <div class="row h-100">
@@ -199,7 +198,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </div>
-    <div class="section">
+    <div class="section" id="services">
         <h2 class="text-center mb-5">What Can We Help You With?</h2>
         <div class="container">
             <div class="row h-100">
@@ -260,7 +259,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-md-12 d-flex align-items-center my-auto">
                     <div>
                         <h2><small>70% of our clients are referred to us by existing clients. Try us for a month and see what we can do for you.</small></h2>
-                        <a href="#pricing" class="btn btn-primary text-center mt-3">Get Started</a>
+                        <a href="#cta" class="btn btn-primary text-center mt-3">Get Started</a>
                     </div>   
                 </div>
             </div>
@@ -502,7 +501,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           .catch(error => console.error('Error!', error.message));
       })
     </script>
-    <script>amplitude.getInstance().logEvent(window.location.href.split('?')[0].replace('https://', ''));</script>
+    <script>amplitude.getInstance().logEvent(window.location.href.split('?')[0].split('#')[0].replace('https://', ''));</script>
     
 </body>
 
